@@ -81,8 +81,7 @@ public class Joueur {
      * Compute the number of gare owned by the Joueur.
      * This method is called by nbGares(Joueur) of class Plateau
      */
-    public void calculerGare()
-    {
+    public void calculerGare(){
         
     }    
     

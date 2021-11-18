@@ -9,6 +9,13 @@ package ecn.info.medev_monopoly_ei3;
  *
  * @author uble
  */
-public class nonAchetable {
+public abstract class NonAchetable extends Case{
+     
+    /**
+     * Abstract method for the toString
+     * @return
+     */
+    @Override
+    public abstract String toString();
     
 }

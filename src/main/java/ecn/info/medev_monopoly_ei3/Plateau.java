@@ -2,6 +2,7 @@ package ecn.info.medev_monopoly_ei3;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class Plateau {
     ArrayList<Case> cases;
@@ -10,11 +11,28 @@ public class Plateau {
     public Plateau() {
 
     }
-    
+
     public Plateau(ArrayList<Case> c, LinkedList<Joueur> j){
         cases = c;
         joueurs = j;
     }
+
+    public ArrayList<Case> getCases() {
+        return cases;
+    }
+
+    public Queue<Joueur> getJoueurs() {
+        return joueurs;
+    }
+
+    public void setCases(ArrayList<Case> cases) {
+        this.cases = cases;
+    }
+
+    public void setJoueurs(Queue<Joueur> joueurs) {
+        this.joueurs = joueurs;
+    }
+
     /**
      * Methode pour calculer le nombre des gares que possède un joueur
      * @param j : joueur
@@ -40,15 +58,19 @@ public class Plateau {
         // TODO
     }
 
-    public Case avance(Case _case, int i) {
-        return _case;
+    public Case avance(Case _case, int d) {
+        int j = (Case.position + d) % cases.size();
+        return cases.get(j);
     }
 
     /**
      *
      */
     public void tourDeJeu() {
-        // TODO
+        while (!finDePartie()) {
+            (joueurs.next()).tourDeJeu();
+        }
+
     }
 
     /**

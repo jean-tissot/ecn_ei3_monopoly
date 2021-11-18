@@ -132,7 +132,7 @@ public class Plateau {
      * @return
      */
     public Case avance(Case _case, int d) {
-        int j = (Case.position + d) % cases.size();
+        int j = (_case.getPosition() + d) % cases.size();
         return cases.get(j);
     }
 
@@ -168,4 +168,3 @@ public class Plateau {
         }
     }
 
-}

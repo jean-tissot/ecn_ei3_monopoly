@@ -6,22 +6,24 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe non achetable
+ * Classe Parc Gratuit
+ * 
  * @author uble
  */
-public abstract class NonAchetable extends Case{
-     
+public class ParcGratuit extends NonAchetable {
     /**
-     * Abstract method for the toString
+     * Méthode d'affichage
+     * 
      * @return
      */
     @Override
-    public abstract String toString();
-    
-    /**
-     * Constructeur classe Non Achetable
-     */
-    public NonAchetable(){
-        super();
+    public String toString() {
+        String message = "Parc gratuit";
+        return (message);
     }
+
+    public ParcGratuit(int position) {
+        super(position);
+    }
+
 }

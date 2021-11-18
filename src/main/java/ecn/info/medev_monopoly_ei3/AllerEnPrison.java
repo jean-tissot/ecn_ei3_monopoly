@@ -6,11 +6,10 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe Chance
- * 
+ *
  * @author uble
  */
-public class Chance extends NonAchetable {
+public class AllerEnPrison extends NonAchetable {
     /**
      * Méthode d'affichage
      * 
@@ -18,11 +17,11 @@ public class Chance extends NonAchetable {
      */
     @Override
     public String toString() {
-        String message = "Chance";
+        String message = "Aller en Prison";
         return (message);
     }
 
-    public Chance(int position) {
+    public AllerEnPrison(int position) {
         super(position);
     }
 

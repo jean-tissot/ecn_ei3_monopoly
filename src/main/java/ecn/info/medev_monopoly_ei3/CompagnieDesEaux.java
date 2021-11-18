@@ -6,11 +6,11 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe Chance
+ * Classe eau
  * 
  * @author uble
  */
-public class Chance extends NonAchetable {
+public class CompagnieDesEaux extends NonAchetable {
     /**
      * Méthode d'affichage
      * 
@@ -22,7 +22,7 @@ public class Chance extends NonAchetable {
         return (message);
     }
 
-    public Chance(int position) {
+    public CompagnieDesEaux(int position) {
         super(position);
     }
 

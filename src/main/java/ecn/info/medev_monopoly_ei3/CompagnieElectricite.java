@@ -6,11 +6,11 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe Chance
+ * Compagnie d'electricité
  * 
  * @author uble
  */
-public class Chance extends NonAchetable {
+public class CompagnieElectricite extends NonAchetable {
     /**
      * Méthode d'affichage
      * 
@@ -18,11 +18,11 @@ public class Chance extends NonAchetable {
      */
     @Override
     public String toString() {
-        String message = "Chance";
-        return (message);
+        String message = "Compagnie d'electricité";
+        return message;
     }
 
-    public Chance(int position) {
+    public CompagnieElectricite(int position) {
         super(position);
     }
 

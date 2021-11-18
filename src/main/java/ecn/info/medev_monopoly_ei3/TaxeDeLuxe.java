@@ -6,11 +6,11 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe Chance
+ * classe taxe
  * 
  * @author uble
  */
-public class Chance extends NonAchetable {
+public class TaxeDeLuxe extends NonAchetable {
     /**
      * Méthode d'affichage
      * 
@@ -18,12 +18,11 @@ public class Chance extends NonAchetable {
      */
     @Override
     public String toString() {
-        String message = "Chance";
+        String message = "Taxe de Luxe";
         return (message);
     }
 
-    public Chance(int position) {
+    public TaxeDeLuxe(int position) {
         super(position);
     }
-
 }

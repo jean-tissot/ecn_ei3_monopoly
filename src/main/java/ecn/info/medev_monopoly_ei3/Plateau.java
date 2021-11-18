@@ -46,82 +46,86 @@ public class Plateau {
      * Méthode d'affichage
      */
     public void affiche() {
-        // TODO
-        String[][] tab = new String[55][121];
-        String[][] cas = new String[5][11];
-        for(int i=0; i<5; i++){
-            for(int j=0; j<11; j++){
+//        // TODO
+//        String[][] tab = new String[55][121];
+//        String[][] cas = new String[5][11];
+//        for(int i=0; i<5; i++){
+//            for(int j=0; j<11; j++){
+//
+//                cas[i][j] = " ";
+//            }
+//        }
+//        for(int i=0; i<55; i++){
+//            for(int j=0; j<121; j++){
+//                tab[i][j] = " ";
+//            }
+//        }
+//
+//        for(int j=1; j<10; j++){
+//            cas[0][j] = "-";
+//        }
+//        for(int i=0; i<3; i++){
+//            cas[i+1][0] = "|";
+//            cas[i+1][10] = "|";
+//        }
+//        for(int j=1; j<10; j++){
+//            cas[2][j] = "-";
+//        }
+//
+//        for(int j=1; j<10; j++){
+//            cas[4][j] = "-";
+//        }
+//        for(int i=0; i<5; i++) {
+//            for (int j = 0; j < 11; j++) {
+//                System.out.print(cas[i][j]);
+//            }
+//            System.out.println("");
+//        }
+//        // creation du plateau :
+//        for(int h=0;h<121; h=h+11){
+//            for(int i=0; i<5; i++){
+//                for(int j=0; j<11; j++){
+//                    tab[i][h+j] = cas[i][j];
+//                }
+//            }
+//
+//        }
+//        // traitement des cases a l'interieur :
+//        for(int u=5; u<50;u=u+5) {
+//            for (int h = 0; h < 11; h = h + 11) {
+//                for (int i = 0; i < 5; i++) {
+//                    for (int j = 0; j < 11; j++) {
+//                        tab[i + u][h + j] = cas[i][j];
+//                    }
+//                }
+//            }
+//            for (int h = 110; h < 121; h = h + 11) {
+//                for (int i = 0; i < 5; i++) {
+//                    for (int j = 0; j < 11; j++) {
+//                        tab[i + u][h + j] = cas[i][j];
+//                    }
+//                }
+//            }
+//        }
+//
+//        for(int h=0;h<121; h=h+11){
+//            for(int i=0; i<5; i++){
+//                for(int j=0; j<11; j++){
+//                    tab[i + 50][h+j] = cas[i][j];
+//                }
+//            }
+//        }
+//        // pour l'affichage
+//
+//        for(int i=0; i<55; i++) {
+//            for (int j = 0; j < 121; j++) {
+//                System.out.print(tab[i][j]);
+//            }
+//            System.out.println("");
+//        }
 
-                cas[i][j] = " ";
-            }
-        }
-        for(int i=0; i<55; i++){
-            for(int j=0; j<121; j++){
-                tab[i][j] = " ";
-            }
-        }
-
-        for(int j=1; j<10; j++){
-            cas[0][j] = "-";
-        }
-        for(int i=0; i<3; i++){
-            cas[i+1][0] = "|";
-            cas[i+1][10] = "|";
-        }
-        for(int j=1; j<10; j++){
-            cas[2][j] = "-";
-        }
-
-        for(int j=1; j<10; j++){
-            cas[4][j] = "-";
-        }
-        for(int i=0; i<5; i++) {
-            for (int j = 0; j < 11; j++) {
-                System.out.print(cas[i][j]);
-            }
-            System.out.println("");
-        }
-        // creation du plateau :
-        for(int h=0;h<121; h=h+11){
-            for(int i=0; i<5; i++){
-                for(int j=0; j<11; j++){
-                    tab[i][h+j] = cas[i][j];
-                }
-            }
-
-        }
-        // traitement des cases a l'interieur :
-        for(int u=5; u<50;u=u+5) {
-            for (int h = 0; h < 11; h = h + 11) {
-                for (int i = 0; i < 5; i++) {
-                    for (int j = 0; j < 11; j++) {
-                        tab[i + u][h + j] = cas[i][j];
-                    }
-                }
-            }
-            for (int h = 110; h < 121; h = h + 11) {
-                for (int i = 0; i < 5; i++) {
-                    for (int j = 0; j < 11; j++) {
-                        tab[i + u][h + j] = cas[i][j];
-                    }
-                }
-            }
-        }
-
-        for(int h=0;h<121; h=h+11){
-            for(int i=0; i<5; i++){
-                for(int j=0; j<11; j++){
-                    tab[i + 50][h+j] = cas[i][j];
-                }
-            }
-        }
-        // pour l'affichage
-
-        for(int i=0; i<55; i++) {
-            for (int j = 0; j < 121; j++) {
-                System.out.print(tab[i][j]);
-            }
-            System.out.println("");
+        for (int i = 0; i < cases.size(); i++) {
+            System.out.println(cases.get(i));
         }
     }
 

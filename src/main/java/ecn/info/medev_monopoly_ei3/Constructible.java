@@ -60,7 +60,7 @@ public class Constructible extends Achetable {
      * @param proprietaire proprietaire de la case
      * @param nom nom de la case
      */
-    public Constructible(int prix, Joueur proprietaire, String nom) {
+    public Constructible(int prix, Joueur proprietaire, String nom, int position) {
         super(prix, proprietaire, nom);
         this.nbMaison = 0;
         this.nbHotel = 0;

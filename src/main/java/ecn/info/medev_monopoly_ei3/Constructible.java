@@ -14,12 +14,12 @@ public class Constructible extends Achetable {
     /**
      * Coefficient multiplicateur du nombre de maisons.
      */
-    static final private int COEFF_MAISON;
+    static final private int COEFF_MAISON = 500;
 
     /**
      * Coefficient multiplicateur du nombre d'hôtels.
      */
-    static final private int COEFF_HOTEL;
+    static final private int COEFF_HOTEL = 1500;
 
     /**
      * Nombre de maisons.
@@ -77,8 +77,7 @@ public class Constructible extends Achetable {
         this.nbHotel = nbHotel;
     }
     
-    public int getNbMaison(){
-        
+    public int getNbMaison(){ 
         return this.nbMaison;
     }
     

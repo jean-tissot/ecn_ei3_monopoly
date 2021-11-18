@@ -22,7 +22,8 @@ public abstract class Achetable extends Case{
      * @param proprietaire joueur propriétaire
      * @param nom nom de la case
      */
-    public Achetable(int prix, Joueur proprietaire, String nom) {
+    public Achetable(int prix, Joueur proprietaire, String nom,int position) {
+        super(position);
         this.prix = prix;
         this.proprietaire = proprietaire;
         this.nom = nom;

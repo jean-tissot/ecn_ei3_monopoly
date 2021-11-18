@@ -8,6 +8,7 @@ package ecn.info.medev_monopoly_ei3;
  *
  * @author Info EI 3
  */
-public class Case {
-    
+public abstract class Case {
+    public int position;
+    public String nom;
 }

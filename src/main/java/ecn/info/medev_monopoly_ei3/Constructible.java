@@ -53,6 +53,18 @@ public class Constructible extends Achetable {
         this.nbMaison = 0;
         this.nbHotel = 0;
     }
+
+    /**
+     * Constructeur de constructible
+     * @param prix prix de la case
+     * @param proprietaire proprietaire de la case
+     * @param nom nom de la case
+     */
+    public Constructible(int prix, Joueur proprietaire, String nom) {
+        super(prix, proprietaire, nom);
+        this.nbMaison = 0;
+        this.nbHotel = 0;
+    }
     
     /**
      * Constructeur spécifiant le nombre de maisons et d'hôtels.

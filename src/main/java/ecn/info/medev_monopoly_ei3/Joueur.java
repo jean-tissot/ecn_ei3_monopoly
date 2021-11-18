@@ -5,6 +5,8 @@
  */
 package ecn.info.medev_monopoly_ei3;
 
+import java.lang.Math
+
 /**
  *
  * @author Valentin Molina
@@ -66,5 +68,16 @@ public class Joueur {
         this.fortune = 100000 ;
         this.position  = new Depart();
         this.plateau = plateau ;
+    }
+
+    /**
+     *
+     */
+    public void tourDeJeu() {
+
+    }
+
+    public static int lanceLeDe() {
+        return ((int) Math.floor(Math.random()*6))+1;
     }
 }

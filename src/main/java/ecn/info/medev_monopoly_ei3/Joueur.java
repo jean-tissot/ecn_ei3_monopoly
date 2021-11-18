@@ -5,6 +5,9 @@
  */
 package ecn.info.medev_monopoly_ei3;
 
+import java.util.List;
+import java.util.Iterator;
+
 /**
  *
  * @author Valentin Molina
@@ -12,6 +15,20 @@ package ecn.info.medev_monopoly_ei3;
  * @author Feibiao Wu
  */
 public class Joueur {
+
+    /**
+     * @return the plateau
+     */
+    public Plateau getPlateau() {
+        return plateau;
+    }
+
+    /**
+     * @param plateau the plateau to set
+     */
+    public void setPlateau(Plateau plateau) {
+        this.plateau = plateau;
+    }
 
     /**
      * @return the nom
@@ -63,7 +80,7 @@ public class Joueur {
     
     public Joueur()
     {
-        this.Joueur("toto", null);
+
     }
     
     
@@ -78,9 +95,23 @@ public class Joueur {
     /**
      * Payer un autre joueur d'après le montant de la case où se trouve le joueur qui appelle la méthode
      * @param j 
+     * @throws NoMoreMoney
      */
-    public void paiement(Joueur j){
+    public void paiement(Joueur j) throws NoMoreMoney{
         
+        if(this.position instanceof Achetable){
+            if(((Achetable)this.position).getProprietaire() == j){
+                if(this.fortune < ((Achetable)this.position).calculLoyer()){
+                    j.fortune+=this.fortune;
+                    this.fortune=0;
+                    throw new NoMoreMoney();
+                }
+                else{
+                    j.fortune+=((Achetable)this.position).calculLoyer();
+                    this.fortune-=((Achetable)this.position).calculLoyer();
+                }
+        }
+        }
     }
     
     
@@ -90,18 +121,51 @@ public class Joueur {
      */
     public int calculerGare()
     {
+        List<Case> cases = this.plateau.getCases();
+        int nbPlateau = 0;
         
-    }    
-    
-    
-    public void tourDeJeu() {
+        Iterator<Case> itr = cases.listIterator();
+        while(itr.hasNext())
+        {
+            Case currentCase = itr.next();
+            if(currentCase instanceof Gare)
+            {
+                if(((Gare)currentCase).getNom().equals(this.nom))
+                {
+                    nbPlateau ++;
+                }
+            }
+        }
+        
+        return nbPlateau ;
+    }
+
+    /**
+     * Tour de jeu.
+     * Le joueur jette un dé et l'action est effectué
+     */
+    public void tourDeJeu() throws NoMoreMoney {
         int de = lanceLeDe();
 
+        Case newPosition = plateau.avance(position, de);
+        position = newPosition;
+        System.out.println("Le joueur " + nom + " est en " + position.toString() + ".");
+
+        if (position instanceof Achetable) {
+            if ((de % 2 == 1) && (((Achetable)position).getProprietaire() == null)) {
+                ((Achetable)position).acheter(this);
+            } else if (((Achetable)position).getProprietaire() != null) {
+                if (((Achetable)position).getProprietaire() != this) {
+                    this.paiement(((Achetable)position).getProprietaire());
+                    
+                }
+            }
+        }
     }
     
     public String toString()
     {
-        return "";
+        return "Le joueur "+this.nom+" possède "+this.fortune+"€. Il se situe sur la case : "+this.position.toString();
     }
 
 
@@ -111,6 +175,20 @@ public class Joueur {
     
     public void libererPropriete()
     {
+        List<Case> cases = this.plateau.getCases();
+        int nbPlateau = 0;
         
+        Iterator<Case> itr = cases.listIterator();
+        while(itr.hasNext()){
+            
+            Case currentCase = itr.next();
+            
+            if(currentCase instanceof Achetable){
+                if(((Achetable)currentCase).getProprietaire() == this){
+                    ((Achetable)currentCase).setProprietaire(null);
+                }
+            }
+            
+        }
     }
 }

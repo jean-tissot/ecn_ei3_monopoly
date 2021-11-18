@@ -6,17 +6,14 @@ package ecn.info.medev_monopoly_ei3;
 
 /**
  *
- * @author Info EI 3
+ * @author thene
  */
-public abstract class Case {
-    private int position;
-
-    public int getPosition() {
-        return position;
+public class NoMoreMoney extends Exception{
+    
+    public NoMoreMoney(){
+        super();
+        System.out.println("NoMoreMoney Exception");
+        
     }
-
-    public void setPosition(int position) {
-        this.position = position;
-    }
-
+    
 }

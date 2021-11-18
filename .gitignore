@@ -41,3 +41,4 @@ nb-configuration.xml
 
 # IDE configuration
 .vscode
+.idea

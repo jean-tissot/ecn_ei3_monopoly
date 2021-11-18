@@ -4,14 +4,28 @@
  */
 package ecn.info.medev_monopoly_ei3;
 
-import lombok.Data;
-
 /**
  *
  * @author Info EI 3
  */
-@Data
 public abstract class Case {
     private int position;
     private String nom;
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
 }

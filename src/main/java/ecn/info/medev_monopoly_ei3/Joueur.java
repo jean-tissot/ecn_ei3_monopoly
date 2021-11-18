@@ -60,6 +60,13 @@ public class Joueur {
     private Case position ;
     private Plateau plateau ;
     
+    
+    public Joueur()
+    {
+        this.Joueur("toto", null);
+    }
+    
+    
     public Joueur(String nom, Plateau plateau)
     {
         this.nom = nom ;
@@ -81,7 +88,7 @@ public class Joueur {
      * Compute the number of gare owned by the Joueur.
      * This method is called by nbGares(Joueur) of class Plateau
      */
-    public void calculerGare()
+    public int calculerGare()
     {
         
     }    
@@ -100,5 +107,10 @@ public class Joueur {
 
     public static int lanceLeDe() {
         return ((int) Math.floor(Math.random()*6))+1;
+    }
+    
+    public void libererPropriete()
+    {
+        
     }
 }

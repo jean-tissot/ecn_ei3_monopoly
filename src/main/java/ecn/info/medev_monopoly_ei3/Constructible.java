@@ -11,13 +11,7 @@ import org.junit.Test;
  *
  * @author bodet
  */
-public class Constructible extends Achetable {
-
-    static public int a;
-    static public int b;
-    
-    private int nbMaison ;
-    private int nbHotel ;
+public class Constructible extends Achetable{
 
     
     public int calculLoyer() {

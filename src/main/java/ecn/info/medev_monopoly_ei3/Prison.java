@@ -27,4 +27,15 @@ public class Prison extends NonAchetable{
         super();
         this.setNom("Prison");
     }
+    
+    public boolean PrisonTest(){
+        String attendu = "Prison";
+        String resultat =  this.toString();
+        if (resultat == attendu){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }

@@ -27,6 +27,5 @@ public abstract class Case {
     public void setNom(String nom) {
         this.nom = nom;
     }
-    public Case(){
-    }
+    
 }

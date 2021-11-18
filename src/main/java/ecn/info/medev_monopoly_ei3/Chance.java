@@ -28,4 +28,15 @@ public class Chance extends NonAchetable{
         this.setNom("Chance");
     }
     
+    public boolean ChanceTest(){
+        String attendu = "Chance";
+        String resultat =  this.toString();
+        if (resultat == attendu){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    
 }

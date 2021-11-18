@@ -19,6 +19,4 @@ public abstract class Case {
         this.position = position;
     }
 
-    public Case() {
-    }
 }

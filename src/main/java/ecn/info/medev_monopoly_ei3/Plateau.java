@@ -1,14 +1,13 @@
 package ecn.info.medev_monopoly_ei3;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class Plateau {
     ArrayList<Case> cases;
     LinkedList<Joueur> joueurs;
 
     /**
-     * Methode pour calcule le nombre des gares que possède un joueur
+     * Methode pour calculer le nombre des gares que possède un joueur
      * @param j : joueur
      * @return :nombre de gares
      */
@@ -16,4 +15,38 @@ public class Plateau {
         return j.calculGare();
     }
 
+    /**
+     * la méthode toString
+     * @return le texte de sortie
+     */
+    public String toString() {
+        // TODO
+        return "";
+    }
+
+    /**
+     * Méthode d'affichage
+     */
+    public void affiche() {
+        // TODO
+    }
+
+    public Case avance(Case _case, int i) {
+        return _case;
+    }
+
+    /**
+     *
+     */
+    public void tourDeJeu() {
+        // TODO
+    }
+
+    /**
+     *
+     */
+    public boolean finDePartie() {
+        // TODO
+        return true;
+    }
 }

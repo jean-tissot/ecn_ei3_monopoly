@@ -67,4 +67,12 @@ public class Joueur {
         this.position  = new Depart();
         this.plateau = plateau ;
     }
+    
+    /**
+     * Payer un autre joueur d'après le montant de la case où se trouve le joueur qui appelle la méthode
+     * @param j 
+     */
+    public void paiement(Joueur j){
+        
+    }
 }

@@ -78,18 +78,26 @@ public class Joueur {
     private Plateau plateau ;
     
     
-    public Joueur()
-    {
-
-    }
-    
-    
+    /**
+     * @param nom Le nom du Joueur.
+     * @param plateau La référence vers le plateau de jeu.
+     * Le joueur est initialisé à sur la case de Départ avec 100000€.
+     */
     public Joueur(String nom, Plateau plateau)
     {
         this.nom = nom ;
         this.fortune = 100000 ;
-        this.position  = new Depart();
         this.plateau = plateau ;
+        
+        List<Case> cases = this.plateau.getCases();
+        Iterator<Case> itr = cases.listIterator();
+        while(itr.hasNext())
+        {
+            if(currentCase instanceof Depart)
+            {
+                position = currentCase;
+            }
+        }
     }
     
     /**
@@ -163,16 +171,27 @@ public class Joueur {
         }
     }
     
+    /**
+     * Override the toString method to display a Joueur.
+     */
+    @Override
     public String toString()
     {
         return "Le joueur "+this.nom+" possède "+this.fortune+"€. Il se situe sur la case : "+this.position.toString();
     }
 
 
+    /**
+     * Throw a dice and return a random value between 1 and 6.
+     */
     public static int lanceLeDe() {
         return ((int) Math.floor(Math.random()*6))+1;
     }
     
+    
+    /**
+     * Free the owned cases of the Joueur. Used when the player dies / has not enough money to play.
+     */
     public void libererPropriete()
     {
         List<Case> cases = this.plateau.getCases();

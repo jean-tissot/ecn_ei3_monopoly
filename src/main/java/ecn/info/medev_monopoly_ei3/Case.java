@@ -8,6 +8,18 @@ package ecn.info.medev_monopoly_ei3;
  *
  * @author Info EI 3
  */
-public class Case {
+public abstract class Case {
+    private int position;
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
     
+    @Override
+    public abstract String toString();
 }

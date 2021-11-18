@@ -38,3 +38,7 @@ nbactions.xml
 nb-configuration.xml
 .project
 .settings/*
+
+# IDE configuration
+.vscode
+.idea

@@ -138,12 +138,28 @@ public class Joueur {
         }
         
         return nbPlateau ;
-    }    
-    
-    
+    }
+
+    /**
+     * Tour de jeu.
+     * Le joueur jette un dé et l'action est effectué
+     */
     public void tourDeJeu() {
         int de = lanceLeDe();
 
+        Case newPosition = plateau.avance(position, de);
+        position = newPosition;
+        System.out.println("Le joueur " + nom + " est en " + position.getNom() + ".");
+
+        if (position instanceof Achetable) {
+            if ((de % 2 == 1) && (position.getProprietaire() == null)) {
+                position.acheter(this);
+            } else if (position.proprietaire != null) {
+                if (position.getProprietaire() != this) {
+                    this.paiement(position.getProprietaire());
+                }
+            }
+        }
     }
     
     public String toString()

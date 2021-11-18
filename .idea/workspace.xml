@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f90c45-7278-4005-a96a-837ab9196347" name="Changes" comment="">
+    <list default="true" id="33f90c45-7278-4005-a96a-837ab9196347" name="Changes" comment="Finish tourDeJeu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Plateau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Joueur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="215HE4T2eXgzFmVdXYDjMFU04gi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,5 +54,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finish tourDeJeu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish tourDeJeu" />
   </component>
 </project>

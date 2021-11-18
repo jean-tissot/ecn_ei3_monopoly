@@ -130,7 +130,7 @@ public class Joueur {
             Case currentCase = itr.next();
             if(currentCase instanceof Gare)
             {
-                if(((Gare)currentCase).getNom().equals(this.nom))
+                if(((Gare)currentCase).getProprietaire() == this)
                 {
                     nbPlateau ++;
                 }

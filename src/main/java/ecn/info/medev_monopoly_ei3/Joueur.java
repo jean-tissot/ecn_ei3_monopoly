@@ -87,13 +87,18 @@ public class Joueur {
     }    
     
     
-    public void tourDeJeu()
-    {
-        
+    public void tourDeJeu() {
+        int de = lanceLeDe();
+
     }
     
     public String toString()
     {
-        
+        return "";
+    }
+
+
+    public static int lanceLeDe() {
+        return ((int) Math.floor(Math.random()*6))+1;
     }
 }

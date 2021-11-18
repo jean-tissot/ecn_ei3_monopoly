@@ -63,7 +63,7 @@ public class Joueur {
     
     public Joueur()
     {
-        this.Joueur("toto", null);
+        
     }
     
     
@@ -90,7 +90,12 @@ public class Joueur {
      */
     public int calculerGare()
     {
+        List<Case> cases = this.plateau.getCases();
+        int nbPlateau = 0;
         
+        
+        
+        return nbPlateau ;
     }    
     
     

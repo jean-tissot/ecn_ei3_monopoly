@@ -144,19 +144,20 @@ public class Joueur {
      * Tour de jeu.
      * Le joueur jette un dé et l'action est effectué
      */
-    public void tourDeJeu() {
+    public void tourDeJeu() throws NoMoreMoney {
         int de = lanceLeDe();
 
         Case newPosition = plateau.avance(position, de);
         position = newPosition;
-        System.out.println("Le joueur " + nom + " est en " + position.getNom() + ".");
+        System.out.println("Le joueur " + nom + " est en " + position.toString() + ".");
 
         if (position instanceof Achetable) {
-            if ((de % 2 == 1) && (position.getProprietaire() == null)) {
-                position.acheter(this);
-            } else if (position.proprietaire != null) {
-                if (position.getProprietaire() != this) {
-                    this.paiement(position.getProprietaire());
+            if ((de % 2 == 1) && (((Achetable)position).getProprietaire() == null)) {
+                ((Achetable)position).acheter(this);
+            } else if (((Achetable)position).getProprietaire() != null) {
+                if (((Achetable)position).getProprietaire() != this) {
+                    this.paiement(((Achetable)position).getProprietaire());
+                    
                 }
             }
         }
@@ -174,6 +175,20 @@ public class Joueur {
     
     public void libererPropriete()
     {
+        List<Case> cases = this.plateau.getCases();
+        int nbPlateau = 0;
         
+        Iterator<Case> itr = cases.listIterator();
+        while(itr.hasNext()){
+            
+            Case currentCase = itr.next();
+            
+            if(currentCase instanceof Achetable){
+                if(((Achetable)currentCase).getProprietaire() == this){
+                    ((Achetable)currentCase).setProprietaire(null);
+                }
+            }
+            
+        }
     }
 }

@@ -16,7 +16,7 @@ public class Chance extends NonAchetable{
      */
     @Override
     public String toString(){
-        String message = this.getNom();
+        String message = "Chance";
         return(message);
     }
     
@@ -25,7 +25,7 @@ public class Chance extends NonAchetable{
      */
     public Chance(){
         super();
-        this.setNom("Chance");
     }
+    
     
 }

@@ -6,25 +6,22 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe prison
+ * Classe non achetable
  * @author uble
  */
-public class Prison extends NonAchetable{
+public abstract class NonAchetable extends Case{
+    
     /**
-     * Méthode d'affichage 
+     * Abstract method for the toString
      * @return
      */
     @Override
-    public String toString(){
-        String message = "Prison";
-        return(message);
-    }
+    public abstract String toString();
     
     /**
-     * Constructeur de la case Prison
+     * Constructeur classe Non Achetable
      */
-    public Prison(){
-        super();
+    protected NonAchetable(){
+        this.setPosition(0);
     }
-
 }

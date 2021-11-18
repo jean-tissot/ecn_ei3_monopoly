@@ -6,25 +6,25 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe prison
+ * classe taxe
  * @author uble
  */
-public class Prison extends NonAchetable{
+public class TaxeDeLuxe extends NonAchetable{
     /**
      * Méthode d'affichage 
      * @return
      */
     @Override
     public String toString(){
-        String message = "Prison";
+        String message = "Taxe de Luxe";
         return(message);
     }
     
     /**
-     * Constructeur de la case Prison
+     * Constructeur de la case taxe
      */
-    public Prison(){
+    public TaxeDeLuxe(){
         super();
     }
-
 }
+

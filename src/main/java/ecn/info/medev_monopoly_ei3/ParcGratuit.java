@@ -6,25 +6,26 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe prison
+ * Classe Parc Gratuit
  * @author uble
  */
-public class Prison extends NonAchetable{
+public class ParcGratuit extends NonAchetable {
     /**
      * Méthode d'affichage 
      * @return
      */
     @Override
     public String toString(){
-        String message = "Prison";
+        String message = "Parc gratuit";
         return(message);
     }
     
     /**
-     * Constructeur de la case Prison
+     * Constructeur case Chance
      */
-    public Prison(){
+    public ParcGratuit(){
         super();
     }
-
+    
+    
 }

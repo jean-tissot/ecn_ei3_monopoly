@@ -4,25 +4,91 @@
  */
 package ecn.info.medev_monopoly_ei3;
 
-
-import org.junit.Test;
-
 /**
+ * Classe Constructible
  *
  * @author bodet
  */
-public class Constructible extends Achetable{
+public class Constructible extends Achetable {
 
-    
-    public int calculLoyer() {
-        
-        int res;
-        
-        res += nbMaison*a + nbHotel*b;
-        return res;
-        
+    /**
+     * Coefficient multiplicateur du nombre de maisons.
+     */
+    static public int a = 10;
+
+    /**
+     * Coefficient multiplicateur du nombre d'hôtels.
+     */
+    static public int b = 10;
+
+    /**
+     * Nombre de maisons.
+     */
+    private int nbMaison;
+
+    public void setNbMaison(int nbMaison) {
+        this.nbMaison = nbMaison;
     }
 
+    public int getNbHotel() {
+        return nbHotel;
+    }
+
+    public void setNbHotel(int nbHotel) {
+        this.nbHotel = nbHotel;
+    }
+
+
+
+    /**
+     * Nombre d'hôtel
+     */
+    private int nbHotel;
+
+    /**
+     * Constructeur par défault.
+     */
+    public Constructible(){
+        super();
+        this.nbMaison = 0;
+        this.nbHotel = 0;
+    }
+    
+    /**
+     * Constructeur spécifiant le nombre de maisons et d'hôtels.
+     * @param nbMaison Nombre de maisons.
+     * @param nbHotel Nombre d'hôtels.
+     */
+    public Constructible(int nbMaison, int nbHotel){
+        super();
+        this.nbMaison = nbMaison;
+        this.nbHotel = nbHotel;
+    }
+    
+    public int getNbMaison(){
+        
+        return this.nbMaison;
+    }
+    
+    /**
+     * Calcul de loyer. Calcul du loyer en fonction du nombre de maisons,
+     * d'hotel et des coefficients a et b.
+     */
+    public int calculLoyer() {
+
+        int res;
+
+        res += nbMaison * a + nbHotel * b;
+        return res;
+
+    }
+
+    
+    
+    /**
+     * Redéfintion de toString.
+     */
+    @Override
     public String toString() {
 
         String res = super.toString();
@@ -37,7 +103,7 @@ public class Constructible extends Achetable{
             } else {
 
                 res += nbMaison + " maisons, ";
-                
+
             }
         }
 
@@ -50,11 +116,11 @@ public class Constructible extends Achetable{
             } else {
 
                 res += nbHotel + " hotels,";
-                
+
             }
         }
 
-        res += " loyer = " + calculLoyer() + "€"
+        res += " loyer = " + calculLoyer() + "€";
         return res;
     }
 

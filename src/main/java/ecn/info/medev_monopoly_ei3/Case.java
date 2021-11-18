@@ -19,4 +19,7 @@ public abstract class Case {
         this.position = position;
     }
 
+    
+    @Override
+    public abstract String toString();
 }

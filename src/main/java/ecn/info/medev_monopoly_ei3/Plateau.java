@@ -16,6 +16,7 @@ public class Plateau {
         joueurs = j;
     }
 
+
     public ArrayList<Case> getCases() {
         return cases;
     }
@@ -165,7 +166,7 @@ public class Plateau {
                     j.tourDeJeu(); //tour de jeu de chaque joueur
                 } catch (NoMoreMoney e){
                     System.out.println("Le joueur " + j.getNom() + " a perdu");
-                    j.libererProprietes();
+                    j.libererPropriete();
                     this.joueurs.remove(j);
                 }
             }

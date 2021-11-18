@@ -1,4 +1,4 @@
-package ecn.info.medev_monopoly_ei3;
+package main.java.ecn.info.medev_monopoly_ei3;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -132,7 +132,7 @@ public class Plateau {
      * @return
      */
     public Case avance(Case _case, int d) {
-        int j = (Case.position + d) % cases.size();
+        int j = (_case.getPosition() + d) % cases.size();
         return cases.get(j);
     }
 
@@ -161,7 +161,7 @@ public class Plateau {
                     j.tourDeJeu(); //tour de jeu de chaque joueur
                 } catch (NoMoreMoney e){
                     System.out.println("Le joueur " + j.getNom() + " a perdu");
-                    j.libererProprietes();
+                    j.libererPropriete();
                     this.joueurs.remove(j);
                 }
             }

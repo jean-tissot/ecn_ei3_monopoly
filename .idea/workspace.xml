@@ -6,7 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="33f90c45-7278-4005-a96a-837ab9196347" name="Changes" comment="Finish tourDeJeu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Achetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Achetable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/AllerEnPrison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/AllerEnPrison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/CaisseDeCommunaute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/CaisseDeCommunaute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Chance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/CompagnieDesEaux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/CompagnieDesEaux.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/CompagnieElectricite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/CompagnieElectricite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Constructible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Constructible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Depart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Depart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Gare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Gare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/NoMoreMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/NoMoreMoney.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/NonAchetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/NonAchetable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/ParcGratuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/ParcGratuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Plateau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Prison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/Prison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/TaxeDeLuxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/TaxeDeLuxe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/testUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ecn/info/medev_monopoly_ei3/testUnit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +50,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

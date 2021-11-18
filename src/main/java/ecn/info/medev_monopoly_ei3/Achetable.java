@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package ecn.info.medev_monopoly_ei3;
+package main.java.ecn.info.medev_monopoly_ei3;
 
 /**
  * Classe des cases achetables par un joueur
@@ -13,7 +9,7 @@ public abstract class Achetable extends Case{
     private Joueur proprietaire;
     private String nom;
     
-    public Achetable(){   
+    public Achetable(){
     }
 
     /**

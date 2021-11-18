@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package ecn.info.medev_monopoly_ei3;
+package main.java.ecn.info.medev_monopoly_ei3;
 
 /**
  * Classe Constructible
@@ -14,12 +10,12 @@ public class Constructible extends Achetable {
     /**
      * Coefficient multiplicateur du nombre de maisons.
      */
-    static final private int COEFF_MAISON;
+    static final private int COEFF_MAISON = 1;
 
     /**
      * Coefficient multiplicateur du nombre d'hôtels.
      */
-    static final private int COEFF_HOTEL;
+    static final private int COEFF_HOTEL = 2;
 
     /**
      * Nombre de maisons.
@@ -71,8 +67,8 @@ public class Constructible extends Achetable {
      * @param nbMaison Nombre de maisons.
      * @param nbHotel Nombre d'hôtels.
      */
-    public Constructible(int nbMaison, int nbHotel, int position){
-        super(position);
+    public Constructible(int prix, Joueur proprietaire, String nom, int nbMaison, int nbHotel){
+        super(prix, proprietaire, nom);
         this.nbMaison = nbMaison;
         this.nbHotel = nbHotel;
     }

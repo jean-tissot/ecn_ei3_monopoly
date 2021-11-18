@@ -75,4 +75,25 @@ public class Joueur {
     public void paiement(Joueur j){
         
     }
+    
+    
+    /**
+     * Compute the number of gare owned by the Joueur.
+     * This method is called by nbGares(Joueur) of class Plateau
+     */
+    public void calculerGare()
+    {
+        
+    }    
+    
+    
+    public void tourDeJeu()
+    {
+        
+    }
+    
+    public String toString()
+    {
+        
+    }
 }

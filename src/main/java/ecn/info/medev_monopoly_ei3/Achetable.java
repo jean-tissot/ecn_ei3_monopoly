@@ -19,10 +19,36 @@ public abstract class Achetable extends Case{
     }
     
     public void acheter(Joueur j){
-        
+        if (j.getFortune() >= this.getPrix()) {
+            this.setProprietaire(j);
+            j.setFortune(j.getFortune()-this.getPrix());
+        }
+        else {
+            System.out.println("Le joueur n'a pas la fortune nécessaire.");
+
+        }
     }
     
     public abstract int calculLoyer();
+    
+    
+    public int getPrix() {
+        return prix;
+    }
+    
+    public void setPrix(int prix) {
+        this.prix = prix;
+    }
+    
+    public Joueur getProprietaire() {
+        return proprietaire;
+    }
+
+    public void setProprietaire(Joueur proprietaire) {
+        this.proprietaire = proprietaire;
+    }
+    
+    
     
     @Override
     public String toString(){

@@ -21,7 +21,7 @@ public abstract class NonAchetable extends Case{
     /**
      * Constructeur classe Non Achetable
      */
-    public NonAchetable(){
+    protected NonAchetable(){
         this.setPosition(0);
     }
 }

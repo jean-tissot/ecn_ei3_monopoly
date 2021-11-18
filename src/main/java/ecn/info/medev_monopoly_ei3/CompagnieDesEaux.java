@@ -6,11 +6,11 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe Chance
+ * Classe eau
  * @author uble
  */
-public class Chance extends NonAchetable{
-    /**
+public class CompagnieDesEaux extends NonAchetable{
+        /**
      * Méthode d'affichage 
      * @return
      */
@@ -21,9 +21,9 @@ public class Chance extends NonAchetable{
     }
     
     /**
-     * Constructeur case Chance
+     * Constructeur case Compagnie des eaux
      */
-    public Chance(){
+    public CompagnieDesEaux(){
         super();
     }
     
@@ -31,8 +31,8 @@ public class Chance extends NonAchetable{
      * Test
      * @return
      */
-    public boolean ChanceTest(){
-        String attendu = "Chance";
+    public boolean EauTest(){
+        String attendu = "Compagnie des eaux";
         String resultat =  this.toString();
         if (resultat == attendu){
             return true;
@@ -43,3 +43,4 @@ public class Chance extends NonAchetable{
     }
     
 }
+

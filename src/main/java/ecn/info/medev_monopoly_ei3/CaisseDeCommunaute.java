@@ -6,24 +6,24 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe Chance
+ * Classe Caisse de Communauté
  * @author uble
  */
-public class Chance extends NonAchetable{
+public class CaisseDeCommunaute extends NonAchetable{
     /**
      * Méthode d'affichage 
      * @return
      */
     @Override
     public String toString(){
-        String message = "Chance";
+        String message = "Caisse de Communauté";
         return(message);
     }
     
     /**
-     * Constructeur case Chance
+     * Constructeur case Caisse Commu
      */
-    public Chance(){
+    public CaisseDeCommunaute(){
         super();
     }
     
@@ -31,8 +31,8 @@ public class Chance extends NonAchetable{
      * Test
      * @return
      */
-    public boolean ChanceTest(){
-        String attendu = "Chance";
+    public boolean AllerTest(){
+        String attendu = "Caisse de Communauté";
         String resultat =  this.toString();
         if (resultat == attendu){
             return true;

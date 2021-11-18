@@ -6,24 +6,24 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe Chance
+ * Compagnie d'electricité
  * @author uble
  */
-public class Chance extends NonAchetable{
-    /**
+public class CompagnieElectricite extends NonAchetable{
+        /**
      * Méthode d'affichage 
      * @return
      */
     @Override
     public String toString(){
-        String message = "Chance";
+        String message = "Compagnie d'electricité";
         return(message);
     }
     
     /**
-     * Constructeur case Chance
+     * Constructeur case Compagnie elec
      */
-    public Chance(){
+    public CompagnieElectricite(){
         super();
     }
     
@@ -31,8 +31,8 @@ public class Chance extends NonAchetable{
      * Test
      * @return
      */
-    public boolean ChanceTest(){
-        String attendu = "Chance";
+    public boolean ElecTest(){
+        String attendu = "Compagnie d'electricité";
         String resultat =  this.toString();
         if (resultat == attendu){
             return true;
@@ -43,3 +43,5 @@ public class Chance extends NonAchetable{
     }
     
 }
+
+

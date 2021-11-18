@@ -6,33 +6,29 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe Chance
+ * classe taxe
  * @author uble
  */
-public class Chance extends NonAchetable{
+public class TaxeDeLuxe extends NonAchetable{
     /**
      * Méthode d'affichage 
      * @return
      */
     @Override
     public String toString(){
-        String message = "Chance";
+        String message = "Taxe de Luxe";
         return(message);
     }
     
     /**
-     * Constructeur case Chance
+     * Constructeur de la case taxe
      */
-    public Chance(){
+    public TaxeDeLuxe(){
         super();
     }
     
-    /**
-     * Test
-     * @return
-     */
-    public boolean ChanceTest(){
-        String attendu = "Chance";
+    public boolean LuxeTest(){
+        String attendu = "Taxe de Luxe";
         String resultat =  this.toString();
         if (resultat == attendu){
             return true;
@@ -41,5 +37,5 @@ public class Chance extends NonAchetable{
             return false;
         }
     }
-    
 }
+

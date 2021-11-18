@@ -26,16 +26,5 @@ public class TaxeDeLuxe extends NonAchetable{
     public TaxeDeLuxe(){
         super();
     }
-    
-    public boolean LuxeTest(){
-        String attendu = "Taxe de Luxe";
-        String resultat =  this.toString();
-        if (resultat == attendu){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
 }
 

@@ -27,15 +27,5 @@ public class ParcGratuit extends NonAchetable {
         super();
     }
     
-    public boolean ParcTest(){
-        String attendu = "Parc gratuit";
-        String resultat =  this.toString();
-        if (resultat == attendu){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
     
 }

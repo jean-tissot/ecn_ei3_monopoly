@@ -27,20 +27,5 @@ public class CompagnieDesEaux extends NonAchetable{
         super();
     }
     
-    /**
-     * Test
-     * @return
-     */
-    public boolean EauTest(){
-        String attendu = "Compagnie des eaux";
-        String resultat =  this.toString();
-        if (resultat == attendu){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-    
 }
 

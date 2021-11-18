@@ -27,19 +27,5 @@ public class CaisseDeCommunaute extends NonAchetable{
         super();
     }
     
-    /**
-     * Test
-     * @return
-     */
-    public boolean AllerTest(){
-        String attendu = "Caisse de Communauté";
-        String resultat =  this.toString();
-        if (resultat == attendu){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
     
 }

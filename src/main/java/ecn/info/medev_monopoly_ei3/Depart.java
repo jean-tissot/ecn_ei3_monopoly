@@ -27,14 +27,5 @@ public class Depart extends NonAchetable{
     public Depart(){
         super();
     }
-    public boolean DepartTest(){
-        String attendu = "Départ";
-        String resultat =  this.toString();
-        if (resultat == attendu){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
+
 }

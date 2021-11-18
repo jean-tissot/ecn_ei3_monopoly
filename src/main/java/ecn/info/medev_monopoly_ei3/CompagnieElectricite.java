@@ -27,21 +27,7 @@ public class CompagnieElectricite extends NonAchetable{
         super();
     }
     
-    /**
-     * Test
-     * @return
-     */
-    public boolean ElecTest(){
-        String attendu = "Compagnie d'electricité";
-        String resultat =  this.toString();
-        if (resultat == attendu){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-    
+ 
 }
 
 

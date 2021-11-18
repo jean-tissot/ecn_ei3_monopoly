@@ -21,21 +21,11 @@ public class AllerEnPrison extends NonAchetable{
     }
     
     /**
-     * Constructeur case Chance
+     * Constructeur case aller en prison
      */
     public AllerEnPrison(){
         super();
     }
     
-    public boolean AllerTest(){
-        String attendu = "Aller en Prison";
-        String resultat =  this.toString();
-        if (resultat == attendu){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
     
 }

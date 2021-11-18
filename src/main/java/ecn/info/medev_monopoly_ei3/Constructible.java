@@ -14,12 +14,12 @@ public class Constructible extends Achetable {
     /**
      * Coefficient multiplicateur du nombre de maisons.
      */
-    static public int a = 10;
+    static final private int COEFF_MAISON;
 
     /**
      * Coefficient multiplicateur du nombre d'hôtels.
      */
-    static public int b = 10;
+    static final private int COEFF_HOTEL;
 
     /**
      * Nombre de maisons.
@@ -74,11 +74,12 @@ public class Constructible extends Achetable {
      * Calcul de loyer. Calcul du loyer en fonction du nombre de maisons,
      * d'hotel et des coefficients a et b.
      */
+    @Override
     public int calculLoyer() {
 
         int res;
 
-        res += nbMaison * a + nbHotel * b;
+        res = nbMaison * COEFF_MAISON + nbHotel * COEFF_HOTEL;
         return res;
 
     }

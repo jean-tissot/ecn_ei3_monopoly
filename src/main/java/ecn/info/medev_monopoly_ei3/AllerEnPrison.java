@@ -16,7 +16,7 @@ public class AllerEnPrison extends NonAchetable{
      */
     @Override
     public String toString(){
-        String message = this.getNom();
+        String message = "Aller en Prison";
         return(message);
     }
     
@@ -25,7 +25,6 @@ public class AllerEnPrison extends NonAchetable{
      */
     public AllerEnPrison(){
         super();
-        this.setNom("Aller en Prison");
     }
     
     public boolean AllerTest(){

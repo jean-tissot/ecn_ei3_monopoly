@@ -16,7 +16,7 @@ public class ParcGratuit extends NonAchetable {
      */
     @Override
     public String toString(){
-        String message = this.getNom();
+        String message = "Parc gratuit";
         return(message);
     }
     
@@ -25,7 +25,6 @@ public class ParcGratuit extends NonAchetable {
      */
     public ParcGratuit(){
         super();
-        this.setNom("Parc gratuit");
     }
     
     public boolean ParcTest(){

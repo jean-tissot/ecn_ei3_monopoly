@@ -16,7 +16,7 @@ public class Prison extends NonAchetable{
      */
     @Override
     public String toString(){
-        String message = this.getNom();
+        String message = "Prison";
         return(message);
     }
     
@@ -25,7 +25,6 @@ public class Prison extends NonAchetable{
      */
     public Prison(){
         super();
-        this.setNom("Prison");
     }
     
     public boolean PrisonTest(){

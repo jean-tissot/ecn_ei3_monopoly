@@ -17,7 +17,7 @@ public class Depart extends NonAchetable{
      */
     @Override
     public String toString(){
-        String message = this.getNom();
+        String message = "Départ";
         return(message);
     }
     
@@ -26,7 +26,6 @@ public class Depart extends NonAchetable{
      */
     public Depart(){
         super();
-        this.setNom("Départ");
     }
     public boolean DepartTest(){
         String attendu = "Départ";

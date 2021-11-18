@@ -5,8 +5,6 @@
  */
 package ecn.info.medev_monopoly_ei3;
 
-import java.lang.Math
-
 /**
  *
  * @author Valentin Molina
@@ -69,15 +67,12 @@ public class Joueur {
         this.position  = new Depart();
         this.plateau = plateau ;
     }
-
+    
     /**
-     *
+     * Payer un autre joueur d'après le montant de la case où se trouve le joueur qui appelle la méthode
+     * @param j 
      */
-    public void tourDeJeu() {
-
-    }
-
-    public static int lanceLeDe() {
-        return ((int) Math.floor(Math.random()*6))+1;
+    public void paiement(Joueur j){
+        
     }
 }

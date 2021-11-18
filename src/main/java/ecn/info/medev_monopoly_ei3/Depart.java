@@ -6,12 +6,26 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- *
+ * Classe Départ
  * @author uble
  */
 public class Depart extends NonAchetable{
+    
+    /**
+     * Méthode d'affichage 
+     * @return
+     */
+    @Override
     public String toString(){
-        String message = new String();
+        String message = this.getNom();
         return(message);
+    }
+    
+    /**
+     * Constructeur Départ
+     */
+    public Depart(){
+        super();
+        this.setNom("Départ");
     }
 }

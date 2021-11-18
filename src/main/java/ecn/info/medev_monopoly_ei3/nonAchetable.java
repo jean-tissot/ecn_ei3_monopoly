@@ -6,7 +6,7 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- *
+ * Classe non achetable
  * @author uble
  */
 public abstract class NonAchetable extends Case{
@@ -18,4 +18,10 @@ public abstract class NonAchetable extends Case{
     @Override
     public abstract String toString();
     
+    /**
+     * Constructeur classe Non Achetable
+     */
+    public NonAchetable(){
+        super();
+    }
 }

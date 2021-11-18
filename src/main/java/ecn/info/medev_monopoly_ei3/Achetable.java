@@ -5,11 +5,10 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- *
+ * Classe des cases achetables par un joueur
  * @author Info EI 3
  */
 public abstract class Achetable extends Case{
-        
     private int prix;
     private Joueur proprietaire;
     private String nom;
@@ -18,8 +17,17 @@ public abstract class Achetable extends Case{
         
     }
     
+    /**
+     * Permet au joueur d'acheter une case.
+     * 
+     * @param j Joueur qui achète la case
+     */
     public void acheter(Joueur j){
-        if (j.getFortune() >= this.getPrix()) {
+        
+        if (this.proprietaire!=null){
+            System.out.println("La case a déjà un propriétaire.");
+        }
+        else if (j.getFortune() >= this.getPrix()) {
             this.setProprietaire(j);
             j.setFortune(j.getFortune()-this.getPrix());
         }
@@ -29,6 +37,11 @@ public abstract class Achetable extends Case{
         }
     }
     
+    /**
+     * Calcul d'un loyer pour la case.
+     * 
+     * @return le loyer
+     */
     public abstract int calculLoyer();
     
     
@@ -47,15 +60,18 @@ public abstract class Achetable extends Case{
     public void setProprietaire(Joueur proprietaire) {
         this.proprietaire = proprietaire;
     }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
     
     
     
     @Override
-    public String toString(){
-        String s="";
-        
-        
-        return s;
-    }
+    public abstract String toString();
     
 }

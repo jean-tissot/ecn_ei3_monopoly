@@ -6,7 +6,7 @@
 package ecn.info.medev_monopoly_ei3;
 
 import java.util.List;
-import java.util.Itertor;
+import java.util.Iterator;
 
 /**
  *
@@ -98,16 +98,19 @@ public class Joueur {
      * @throws NoMoreMoney
      */
     public void paiement(Joueur j) throws NoMoreMoney{
-        if(this.position instanceof Achetable && this.position.proprietaire == j){
-            if(this.fortune < this.position.calculLoyer()){
-                j.fortune+=this.fortune;
-                this.fortune=0;
-                throw new NoMoreMoney();
-            }
-            else{
-                j.fortune+=this.position.calculLoyer();
-                this.fortune-=this.position.calculLoyer();
-            }
+        
+        if(this.position instanceof Achetable){
+            if(((Achetable)this.position).getProprietaire() == j){
+                if(this.fortune < ((Achetable)this.position).calculLoyer()){
+                    j.fortune+=this.fortune;
+                    this.fortune=0;
+                    throw new NoMoreMoney();
+                }
+                else{
+                    j.fortune+=((Achetable)this.position).calculLoyer();
+                    this.fortune-=((Achetable)this.position).calculLoyer();
+                }
+        }
         }
     }
     

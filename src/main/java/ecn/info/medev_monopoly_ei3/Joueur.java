@@ -5,6 +5,9 @@
  */
 package ecn.info.medev_monopoly_ei3;
 
+import java.util.List;
+import java.util.Itertor;
+
 /**
  *
  * @author Valentin Molina
@@ -118,7 +121,18 @@ public class Joueur {
         List<Case> cases = this.plateau.getCases();
         int nbPlateau = 0;
         
-        
+        Iterator<Case> itr = cases.listIterator();
+        while(itr.hasNext())
+        {
+            Case currentCase = itr.next();
+            if(currentCase instanceof Gare)
+            {
+                if(((Gare)currentCase).getNom().equals(this.nom))
+                {
+                    nbPlateau ++;
+                }
+            }
+        }
         
         return nbPlateau ;
     }    
@@ -131,7 +145,7 @@ public class Joueur {
     
     public String toString()
     {
-        return "";
+        return "Le joueur "+this.nom+" possède "+this.fortune+"€. Il se situe sur la case : "+this.position.toString();
     }
 
 

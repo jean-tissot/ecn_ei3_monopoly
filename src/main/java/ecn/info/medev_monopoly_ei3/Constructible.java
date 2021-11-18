@@ -59,8 +59,8 @@ public class Constructible extends Achetable {
      * @param nbMaison Nombre de maisons.
      * @param nbHotel Nombre d'hôtels.
      */
-    public Constructible(int nbMaison, int nbHotel){
-        super();
+    public Constructible(int nbMaison, int nbHotel, int position){
+        super(position);
         this.nbMaison = nbMaison;
         this.nbHotel = nbHotel;
     }

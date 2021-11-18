@@ -7,25 +7,23 @@ package ecn.info.medev_monopoly_ei3;
 
 /**
  * Classe eau
+ * 
  * @author uble
  */
-public class CompagnieDesEaux extends NonAchetable{
-        /**
-     * Méthode d'affichage 
+public class CompagnieDesEaux extends NonAchetable {
+    /**
+     * Méthode d'affichage
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String message = "Chance";
-        return(message);
+        return (message);
     }
-    
-    /**
-     * Constructeur case Compagnie des eaux
-     */
-    public CompagnieDesEaux(){
-        super();
-    }
-    
-}
 
+    public CompagnieDesEaux(int position) {
+        super(position);
+    }
+
+}

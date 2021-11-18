@@ -38,8 +38,6 @@ public class Constructible extends Achetable {
         this.nbHotel = nbHotel;
     }
 
-
-
     /**
      * Nombre d'hôtel
      */
@@ -48,43 +46,45 @@ public class Constructible extends Achetable {
     /**
      * Constructeur par défault.
      */
-    public Constructible(){
-        super();
+    public Constructible(int position) {
+        super(position);
         this.nbMaison = 0;
         this.nbHotel = 0;
     }
 
     /**
      * Constructeur de constructible
-     * @param prix prix de la case
+     * 
+     * @param prix         prix de la case
      * @param proprietaire proprietaire de la case
-     * @param nom nom de la case
+     * @param nom          nom de la case
      */
-    public Constructible(int prix, Joueur proprietaire, String nom) {
-        super(prix, proprietaire, nom);
+    public Constructible(int prix, String nom, int position) {
+        super(prix, nom, position);
         this.nbMaison = 0;
         this.nbHotel = 0;
     }
-    
+
     /**
      * Constructeur spécifiant le nombre de maisons et d'hôtels.
+     * 
      * @param nbMaison Nombre de maisons.
-     * @param nbHotel Nombre d'hôtels.
+     * @param nbHotel  Nombre d'hôtels.
      */
-    public Constructible(int nbMaison, int nbHotel, int position){
+    public Constructible(int nbMaison, int nbHotel, int position) {
         super(position);
         this.nbMaison = nbMaison;
         this.nbHotel = nbHotel;
     }
-    
-    public int getNbMaison(){
-        
+
+    public int getNbMaison() {
+
         return this.nbMaison;
     }
-    
+
     /**
-     * Calcul de loyer. Calcul du loyer en fonction du nombre de maisons,
-     * d'hotel et des coefficients a et b.
+     * Calcul de loyer. Calcul du loyer en fonction du nombre de maisons, d'hotel et
+     * des coefficients a et b.
      */
     @Override
     public int calculLoyer() {
@@ -96,8 +96,6 @@ public class Constructible extends Achetable {
 
     }
 
-    
-    
     /**
      * Redéfintion de toString.
      */
@@ -109,7 +107,7 @@ public class Constructible extends Achetable {
         if (nbMaison > 0) {
 
             res += ", ";
-            if (nbMaison == 1) {  // Pour gérer le singulier
+            if (nbMaison == 1) { // Pour gérer le singulier
 
                 res += "1 maison, ";
 
@@ -122,7 +120,7 @@ public class Constructible extends Achetable {
 
         if (nbHotel > 0) {
 
-            if (nbHotel == 1) {  // Pour gérer le singulier
+            if (nbHotel == 1) { // Pour gérer le singulier
 
                 res += "1 hotel,";
 

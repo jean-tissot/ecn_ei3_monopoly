@@ -7,25 +7,23 @@ package ecn.info.medev_monopoly_ei3;
 
 /**
  * Classe Chance
+ * 
  * @author uble
  */
-public class Chance extends NonAchetable{
+public class Chance extends NonAchetable {
     /**
-     * Méthode d'affichage 
+     * Méthode d'affichage
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String message = "Chance";
-        return(message);
+        return (message);
     }
-    
-    /**
-     * Constructeur case Chance
-     */
-    public Chance(){
-        super();
+
+    public Chance(int position) {
+        super(position);
     }
-    
-    
+
 }

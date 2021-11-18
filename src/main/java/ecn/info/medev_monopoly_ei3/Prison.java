@@ -7,24 +7,23 @@ package ecn.info.medev_monopoly_ei3;
 
 /**
  * Classe prison
+ * 
  * @author uble
  */
-public class Prison extends NonAchetable{
+public class Prison extends NonAchetable {
     /**
-     * Méthode d'affichage 
+     * Méthode d'affichage
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String message = "Prison";
-        return(message);
+        return (message);
     }
-    
-    /**
-     * Constructeur de la case Prison
-     */
-    public Prison(){
-        super();
+
+    public Prison(int position) {
+        super(position);
     }
 
 }

@@ -7,25 +7,23 @@ package ecn.info.medev_monopoly_ei3;
 
 /**
  * Classe Parc Gratuit
+ * 
  * @author uble
  */
 public class ParcGratuit extends NonAchetable {
     /**
-     * Méthode d'affichage 
+     * Méthode d'affichage
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String message = "Parc gratuit";
-        return(message);
+        return (message);
     }
-    
-    /**
-     * Constructeur case Chance
-     */
-    public ParcGratuit(){
-        super();
+
+    public ParcGratuit(int position) {
+        super(position);
     }
-    
-    
+
 }

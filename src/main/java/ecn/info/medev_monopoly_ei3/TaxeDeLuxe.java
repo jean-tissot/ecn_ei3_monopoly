@@ -7,24 +7,22 @@ package ecn.info.medev_monopoly_ei3;
 
 /**
  * classe taxe
+ * 
  * @author uble
  */
-public class TaxeDeLuxe extends NonAchetable{
+public class TaxeDeLuxe extends NonAchetable {
     /**
-     * Méthode d'affichage 
+     * Méthode d'affichage
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String message = "Taxe de Luxe";
-        return(message);
+        return (message);
     }
-    
-    /**
-     * Constructeur de la case taxe
-     */
-    public TaxeDeLuxe(){
-        super();
+
+    public TaxeDeLuxe(int position) {
+        super(position);
     }
 }
-

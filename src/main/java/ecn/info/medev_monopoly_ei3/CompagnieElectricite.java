@@ -7,27 +7,23 @@ package ecn.info.medev_monopoly_ei3;
 
 /**
  * Compagnie d'electricité
+ * 
  * @author uble
  */
-public class CompagnieElectricite extends NonAchetable{
-        /**
-     * Méthode d'affichage 
+public class CompagnieElectricite extends NonAchetable {
+    /**
+     * Méthode d'affichage
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String message = "Compagnie d'electricité";
-        return(message);
+        return message;
     }
-    
-    /**
-     * Constructeur case Compagnie elec
-     */
-    public CompagnieElectricite(){
-        super();
+
+    public CompagnieElectricite(int position) {
+        super(position);
     }
-    
- 
+
 }
-
-

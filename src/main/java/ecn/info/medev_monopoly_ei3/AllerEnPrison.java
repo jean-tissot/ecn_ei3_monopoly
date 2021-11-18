@@ -9,23 +9,20 @@ package ecn.info.medev_monopoly_ei3;
  *
  * @author uble
  */
-public class AllerEnPrison extends NonAchetable{
+public class AllerEnPrison extends NonAchetable {
     /**
-     * Méthode d'affichage 
+     * Méthode d'affichage
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String message = "Aller en Prison";
-        return(message);
+        return (message);
     }
-    
-    /**
-     * Constructeur case aller en prison
-     */
-    public AllerEnPrison(){
-        super();
+
+    public AllerEnPrison(int position) {
+        super(position);
     }
-    
-    
+
 }

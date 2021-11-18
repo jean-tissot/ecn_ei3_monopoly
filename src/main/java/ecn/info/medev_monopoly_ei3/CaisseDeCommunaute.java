@@ -7,25 +7,23 @@ package ecn.info.medev_monopoly_ei3;
 
 /**
  * Classe Caisse de Communauté
+ * 
  * @author uble
  */
-public class CaisseDeCommunaute extends NonAchetable{
+public class CaisseDeCommunaute extends NonAchetable {
     /**
-     * Méthode d'affichage 
+     * Méthode d'affichage
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String message = "Caisse de Communauté";
-        return(message);
+        return (message);
     }
-    
-    /**
-     * Constructeur case Caisse Commu
-     */
-    public CaisseDeCommunaute(){
-        super();
+
+    public CaisseDeCommunaute(int position) {
+        super(position);
     }
-    
-    
+
 }

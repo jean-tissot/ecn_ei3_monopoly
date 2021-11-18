@@ -93,6 +93,7 @@ public class Joueur {
         Iterator<Case> itr = cases.listIterator();
         while(itr.hasNext())
         {
+            Case currentCase = itr.next();
             if(currentCase instanceof Depart)
             {
                 position = currentCase;

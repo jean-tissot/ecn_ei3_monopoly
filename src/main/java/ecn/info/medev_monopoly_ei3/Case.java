@@ -11,6 +11,14 @@ package ecn.info.medev_monopoly_ei3;
 public abstract class Case {
     private int position;
 
+    public Case(){
+        position=0;
+    }
+    
+    public Case(){
+        position=0;
+    }
+    
     public int getPosition() {
         return position;
     }

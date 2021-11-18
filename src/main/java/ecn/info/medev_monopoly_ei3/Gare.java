@@ -19,9 +19,10 @@ public class Gare extends Achetable {
      * @param prix prix de la gare
      * @param proprietaire joueur proprietaire de la gare
      * @param nom nom de la gare
+     * @param position position
      */
-    public Gare(int prix, Joueur proprietaire, String nom) {
-        super(prix, proprietaire, nom);
+    public Gare(int prix, Joueur proprietaire, String nom, int position) {
+        super(prix, proprietaire, nom, position);
     }
     
     

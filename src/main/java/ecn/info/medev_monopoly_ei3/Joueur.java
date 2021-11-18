@@ -14,6 +14,20 @@ package ecn.info.medev_monopoly_ei3;
 public class Joueur {
 
     /**
+     * @return the plateau
+     */
+    public Plateau getPlateau() {
+        return plateau;
+    }
+
+    /**
+     * @param plateau the plateau to set
+     */
+    public void setPlateau(Plateau plateau) {
+        this.plateau = plateau;
+    }
+
+    /**
      * @return the nom
      */
     public String getNom() {
@@ -78,9 +92,20 @@ public class Joueur {
     /**
      * Payer un autre joueur d'après le montant de la case où se trouve le joueur qui appelle la méthode
      * @param j 
+     * @throws NoMoreMoney
      */
-    public void paiement(Joueur j){
-        
+    public void paiement(Joueur j) throws NoMoreMoney{
+        if(this.position instanceof Achetable && this.position.proprietaire == j){
+            if(this.fortune < this.position.calculLoyer()){
+                j.fortune+=this.fortune;
+                this.fortune=0;
+                throw new NoMoreMoney();
+            }
+            else{
+                j.fortune+=this.position.calculLoyer();
+                this.fortune-=this.position.calculLoyer();
+            }
+        }
     }
     
     

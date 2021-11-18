@@ -13,9 +13,22 @@ public abstract class Achetable extends Case{
     private Joueur proprietaire;
     private String nom;
     
-    public Achetable(){
-        
+    public Achetable(){   
     }
+
+    /**
+     * Constructeur de achetable
+     * @param prix prix de la case
+     * @param proprietaire joueur propriétaire
+     * @param nom nom de la case
+     */
+    public Achetable(int prix, Joueur proprietaire, String nom) {
+        this.prix = prix;
+        this.proprietaire = proprietaire;
+        this.nom = nom;
+    }
+    
+    
     
     /**
      * Permet au joueur d'acheter une case.

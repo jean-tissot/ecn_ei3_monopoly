@@ -93,7 +93,18 @@ public class Joueur {
         List<Case> cases = this.plateau.getCases();
         int nbPlateau = 0;
         
-        
+        Iterator<Case> itr = cases.listIterator();
+        while(itr.hasNext())
+        {
+            currentCase = itr.next();
+            if(currentCase instanceof Gare)
+            {
+                if(((Gare)currentCase).getNom().equals(this.nom))
+                {
+                    nbPlateau ++;
+                }
+            }
+        }
         
         return nbPlateau ;
     }    

@@ -74,11 +74,12 @@ public class Constructible extends Achetable {
      * Calcul de loyer. Calcul du loyer en fonction du nombre de maisons,
      * d'hotel et des coefficients a et b.
      */
+    @Override
     public int calculLoyer() {
 
         int res;
 
-        res += nbMaison * a + nbHotel * b;
+        res = nbMaison * a + nbHotel * b;
         return res;
 
     }

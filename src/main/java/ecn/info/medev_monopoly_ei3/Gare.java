@@ -11,8 +11,8 @@ package ecn.info.medev_monopoly_ei3;
 public class Gare extends Achetable {
     
     /**
-     * 
-     * @return 
+     * Calcule du loyer de la gare en fonction du nombre de gares possédées par le joueur.
+     * @return le loyer
      */
     @Override
     public int calculLoyer() {
@@ -28,19 +28,20 @@ public class Gare extends Achetable {
         return loyer;
     }
 
+    /**
+     * Ajout du loyer de la gare dans le toString
+     * @return 
+     */
     @Override
     public String toString() {
-        String s;
-        s = this.getNom() + " (coût : "+ this.getPrix() + " €)";
-        if (this.getProprietaire()==null){
-              s = s+ "- sans propriétaire";
+        String res = super.toString();
+        if (this.getProprietaire()!=null){
+            res = res + ", loyer = "+this.calculLoyer();
         }
         
         else{
-            s = s + "- propriétaire : "+ this.getProprietaire().getNom() + ", loyer = "+this.calculLoyer();
+            
         }
-        return s;
+        return res;
     }
-    
-
 }

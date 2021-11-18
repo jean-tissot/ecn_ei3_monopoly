@@ -70,8 +70,21 @@ public abstract class Achetable extends Case{
     }
     
     
-    
+    /**
+     * Renvoie le nom, le coût et le propriétaire s'il existe
+     * @return 
+     */
     @Override
-    public abstract String toString();
-    
+    public String toString(){
+        String s;
+        s = this.getNom() + " (coût : "+ this.getPrix() + " €)";
+        if (this.getProprietaire()==null){
+              s = s+ "- sans propriétaire";
+        }
+        
+        else{
+            s = s + "- propriétaire : "+ this.getProprietaire().getNom();
+        }
+        return s;
+    }
 }

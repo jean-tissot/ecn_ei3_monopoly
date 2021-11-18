@@ -10,7 +10,6 @@ package ecn.info.medev_monopoly_ei3;
  */
 public abstract class Case {
     private int position;
-    
 
     public int getPosition() {
         return position;
@@ -19,5 +18,5 @@ public abstract class Case {
     public void setPosition(int position) {
         this.position = position;
     }
-    
+
 }

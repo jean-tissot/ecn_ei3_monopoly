@@ -40,7 +40,7 @@ public class Gare extends Achetable {
         }
 
         else {
-            loyer = 2500 * this.getProprietaire().getPlateau().calculerGare();
+            loyer = 2500 * this.getProprietaire().calculerGare();
         }
         return loyer;
     }

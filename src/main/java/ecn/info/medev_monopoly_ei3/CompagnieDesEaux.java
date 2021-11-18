@@ -6,29 +6,33 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe prison
+ * Classe eau
  * @author uble
  */
-public class Prison extends NonAchetable{
-    /**
+public class CompagnieDesEaux extends NonAchetable{
+        /**
      * Méthode d'affichage 
      * @return
      */
     @Override
     public String toString(){
-        String message = "Prison";
+        String message = "Chance";
         return(message);
     }
     
     /**
-     * Constructeur de la case Prison
+     * Constructeur case Compagnie des eaux
      */
-    public Prison(){
+    public CompagnieDesEaux(){
         super();
     }
     
-    public boolean PrisonTest(){
-        String attendu = "Prison";
+    /**
+     * Test
+     * @return
+     */
+    public boolean EauTest(){
+        String attendu = "Compagnie des eaux";
         String resultat =  this.toString();
         if (resultat == attendu){
             return true;
@@ -37,4 +41,6 @@ public class Prison extends NonAchetable{
             return false;
         }
     }
+    
 }
+

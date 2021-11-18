@@ -6,29 +6,33 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe prison
+ * Classe Caisse de Communauté
  * @author uble
  */
-public class Prison extends NonAchetable{
+public class CaisseDeCommunaute extends NonAchetable{
     /**
      * Méthode d'affichage 
      * @return
      */
     @Override
     public String toString(){
-        String message = "Prison";
+        String message = "Caisse de Communauté";
         return(message);
     }
     
     /**
-     * Constructeur de la case Prison
+     * Constructeur case Caisse Commu
      */
-    public Prison(){
+    public CaisseDeCommunaute(){
         super();
     }
     
-    public boolean PrisonTest(){
-        String attendu = "Prison";
+    /**
+     * Test
+     * @return
+     */
+    public boolean AllerTest(){
+        String attendu = "Caisse de Communauté";
         String resultat =  this.toString();
         if (resultat == attendu){
             return true;
@@ -37,4 +41,5 @@ public class Prison extends NonAchetable{
             return false;
         }
     }
+    
 }

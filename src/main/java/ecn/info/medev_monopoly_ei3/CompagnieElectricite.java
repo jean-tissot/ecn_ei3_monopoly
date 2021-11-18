@@ -6,29 +6,33 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe prison
+ * Compagnie d'electricité
  * @author uble
  */
-public class Prison extends NonAchetable{
-    /**
+public class CompagnieElectricite extends NonAchetable{
+        /**
      * Méthode d'affichage 
      * @return
      */
     @Override
     public String toString(){
-        String message = "Prison";
+        String message = "Compagnie d'electricité";
         return(message);
     }
     
     /**
-     * Constructeur de la case Prison
+     * Constructeur case Compagnie elec
      */
-    public Prison(){
+    public CompagnieElectricite(){
         super();
     }
     
-    public boolean PrisonTest(){
-        String attendu = "Prison";
+    /**
+     * Test
+     * @return
+     */
+    public boolean ElecTest(){
+        String attendu = "Compagnie d'electricité";
         String resultat =  this.toString();
         if (resultat == attendu){
             return true;
@@ -37,4 +41,7 @@ public class Prison extends NonAchetable{
             return false;
         }
     }
+    
 }
+
+

@@ -6,29 +6,29 @@
 package ecn.info.medev_monopoly_ei3;
 
 /**
- * Classe prison
+ *
  * @author uble
  */
-public class Prison extends NonAchetable{
+public class AllerEnPrison extends NonAchetable{
     /**
      * Méthode d'affichage 
      * @return
      */
     @Override
     public String toString(){
-        String message = "Prison";
+        String message = "Aller en Prison";
         return(message);
     }
     
     /**
-     * Constructeur de la case Prison
+     * Constructeur case Chance
      */
-    public Prison(){
+    public AllerEnPrison(){
         super();
     }
     
-    public boolean PrisonTest(){
-        String attendu = "Prison";
+    public boolean AllerTest(){
+        String attendu = "Aller en Prison";
         String resultat =  this.toString();
         if (resultat == attendu){
             return true;
@@ -37,4 +37,5 @@ public class Prison extends NonAchetable{
             return false;
         }
     }
+    
 }

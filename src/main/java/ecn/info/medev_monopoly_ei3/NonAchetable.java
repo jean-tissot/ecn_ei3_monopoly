@@ -10,7 +10,7 @@ package ecn.info.medev_monopoly_ei3;
  * @author uble
  */
 public abstract class NonAchetable extends Case{
-     
+    
     /**
      * Abstract method for the toString
      * @return
@@ -21,7 +21,7 @@ public abstract class NonAchetable extends Case{
     /**
      * Constructeur classe Non Achetable
      */
-    public NonAchetable(){
-        super();
+    protected NonAchetable(){
+        this.setPosition(0);
     }
 }
